@@ -11,7 +11,7 @@
       {% if secret.user == currentuser %}
         <a href="/delete/{{secret.id}}/pop"> Delete</a><br>
       {% elif currentuser in secret.likers.all %}
-        <strong>You liked this before!</strong><br>
+        <strong>You liked this!</strong><br>
       {% else %}
         <a href="/like/{{secret.id}}/pop"> Like</a><br>
       {% endif %}<br>
